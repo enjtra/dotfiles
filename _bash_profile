@@ -16,3 +16,5 @@ eval "$(rbenv init -)"
 
 export EDITOR=/usr/bin/vim
 
+alias g="git"
+
