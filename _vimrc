@@ -230,5 +230,7 @@ imap [ []<LEFT>
 imap ( ()<LEFT>
 """"""""""""""""""""""""""""""
 
+set cb=unnamedplus,autoselect
+
 " filetypeの自動検出(最後の方に書いた方がいいらしい)
 filetype on
