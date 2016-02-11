@@ -104,5 +104,7 @@ let &cpo = s:cpo_save
 unlet s:cpo_save
 
 set lsp=2
-set guifont=IPAゴシック\ 12
+"set guifont=IPAゴシック\ 12
+set guifont=VL\ ゴシック\ 12
+
 set lines=90 columns=200
