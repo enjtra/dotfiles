@@ -17,6 +17,9 @@ eval "$(rbenv init -)"
 export EDITOR=/usr/bin/vim
 
 alias g="git"
+alias gst="git status"
+alias gdiffm="git diff --diff-filter=M"
+alias gdiffmh="git diff --diff-filter=M HEAD"
 
 source $HOME/.git-completion.bash
 source $HOME/.git-prompt.sh

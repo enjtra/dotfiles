@@ -26,6 +26,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 " ファイルをtree表示してくれる
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 " Gitを便利に使う
 NeoBundle 'tpope/vim-fugitive'
 
@@ -234,3 +235,15 @@ set cb=unnamedplus,autoselect
 
 " filetypeの自動検出(最後の方に書いた方がいいらしい)
 filetype on
+
+" 隠しファイルを表示する
+let NERDTreeShowHidden = 1
+
+nnoremap <silent><C-e> :NERDTreeFocusToggle<CR>
+
+" デフォルトでツリーを表示させる
+let g:nerdtree_tabs_open_on_console_startup=1
+
+" 他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる。
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
